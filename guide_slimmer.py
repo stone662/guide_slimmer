@@ -1,4 +1,6 @@
-import xml.etree.ElementTree as ET
+#!/usr/bin/env python3
+
+from lxml import etree as ET
 import sys
 
 

@@ -21,7 +21,7 @@ echo "Inflating EPG Info"
 gunzip -c $gz_file >> $full_file
 
 echo "Refining EPG Info..."
-python "$path_to_py/guide_slimmer.py" $full_file $locale $output
+ ./"$path_to_py/guide_slimmer.py" $full_file $locale $output
 
 if [ $? -eq 0 ]; then
     echo "$output sucesssfully written"
